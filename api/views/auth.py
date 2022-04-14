@@ -53,7 +53,7 @@ def login():
     token = create_token(payload)
     return jsonify(profile=payload, token=token), 200
 
-  return jsonify(err="Loggin Failed"), 401
+  return jsonify(err="Log In Failed"), 401
 
 
 @auth.errorhandler(Exception)          
